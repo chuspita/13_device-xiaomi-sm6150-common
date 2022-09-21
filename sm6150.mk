@@ -143,13 +143,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
 TARGET_EXCLUDES_AUDIOFX := true
-<<<<<<< HEAD
-
-# Dolby
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
-=======
->>>>>>> c436787... sm6150-common: Remove  Moto Dolby
 
 # DRM
 PRODUCT_PACKAGES += \
