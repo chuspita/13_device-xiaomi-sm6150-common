@@ -43,6 +43,7 @@ AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
@@ -79,6 +80,7 @@ LOC_HIDL_VERSION := 4.0
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/hidl/compatibility_matrix.xml
+ODM_MANIFEST_FILES += $(COMMON_PATH)/configs/hidl/manifest-qva.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -88,7 +90,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LD=ld.lld LLVM=1 LLVM_IAS=1
 TARGET_KERNEL_CLANG_COMPILE := true
 KERNEL_SUPPORTS_LLVM_TOOLS := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sleepy
+TARGET_KERNEL_SOURCE := kernel/xiaomi/quantum
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton
 
